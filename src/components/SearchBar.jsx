@@ -14,10 +14,15 @@ const SearchBar = () => {
   const [showCities, setShowCities] = useState(false);
 
   const fetchEvents = async () => {
-    const res = await axios.get(
+    try{
+      const res = await axios.get(
       `https://eventdata.onrender.com/events?state=${selectedState}&city=${selectedCity}`
     );
     setEvents(res.data);
+    }
+    catch(err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
@@ -39,6 +44,8 @@ const SearchBar = () => {
   useEffect(() => {
     const fetchStates = async () => {
       try {
+        const eve = await axios.get(`https://eventdata.onrender.com/events?state=Texas&city=Austin`);
+        setEvents(eve.data);
         const res = await axios.get(
           "https://eventdata.onrender.com/states"
         );
