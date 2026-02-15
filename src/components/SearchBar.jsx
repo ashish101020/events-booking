@@ -44,8 +44,6 @@ const SearchBar = () => {
   useEffect(() => {
     const fetchStates = async () => {
       try {
-        const eve = await axios.get(`https://eventdata.onrender.com/events?state=Texas&city=Austin`);
-        setEvents(eve.data);
         const res = await axios.get(
           "https://eventdata.onrender.com/states"
         );
