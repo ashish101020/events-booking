@@ -1,0 +1,7 @@
+.footer {
+  width: 100%;
+  min-height: 300px;
+  background: linear-gradient(135deg, #2AA7FF, #0C8CE5);
+  position: relative;
+  overflow: visible; 
+}

@@ -1,0 +1,17 @@
+.home-hero {
+  width: 100%;
+  min-height: 300px;
+  background: linear-gradient(135deg, #2AA7FF, #0C8CE5);
+  position: relative;
+  overflow: visible; 
+}
+
+
+.search-wrapper {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  min-width: 300px;
+}
