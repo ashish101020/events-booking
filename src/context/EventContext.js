@@ -9,7 +9,7 @@ export const EventContextProvider = ({children}) => {
         return savedBookings ? JSON.parse(savedBookings) : [];
     });
     const [events, setEvents] = useState([]);
-    const [selectedCity, setSelectedCity] = useState("");
+    const [selectedCity, setSelectedCity] = useState("Austin");
 
     useEffect(()=>{
         if(bookings){
