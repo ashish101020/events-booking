@@ -8,7 +8,7 @@ const SearchBar = () => {
   const { setEvents, selectedCity, setSelectedCity} = useEventContext();
   const [states, setStates] = useState([]);
   const [cities, setCities] = useState([]);
-  const [selectedState, setSelectedState] = useState("Texas");
+  const [selectedState, setSelectedState] = useState("");
 
   const [showStates, setShowStates] = useState(false);
   const [showCities, setShowCities] = useState(false);
